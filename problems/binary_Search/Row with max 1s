@@ -1,0 +1,28 @@
+class Solution {
+    int rowWithMax1s(int arr[][], int n, int m) {
+        // code here
+       int max=Integer.MIN_VALUE;
+        int rlow=0;
+        int rhigh=n;
+        int row=-1;
+        while(rlow < rhigh){
+             int clow=0;
+             int chigh=m-1;
+            // int tmax=Integer.MIN_VALUE;
+             while(clow <= chigh){
+                 int mid=(clow+chigh)/2;
+                 if(arr[rlow][mid]==1){
+                     chigh=mid-1;
+                }
+                else clow=mid+1;
+             }
+             // tmax=Math.max(max,m-clow);
+             if(m-clow > max && (m-clow) > 0){
+                 max=m-clow;
+                 row=rlow;
+             }
+             rlow++;
+        }
+        return row;
+    }
+}
