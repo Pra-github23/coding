@@ -1,0 +1,15 @@
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int topCol=matrix[0].length-1;
+        int topRow=0;
+        
+        while(topRow < matrix.length && topCol >= 0){
+            System.out.println(topRow+"  "+topCol);
+           if(matrix[topRow][topCol]==target)return true;
+            if(matrix[topRow][topCol] > target)topCol--;
+            else topRow++;
+            
+        }
+        return false;
+    }
+}
