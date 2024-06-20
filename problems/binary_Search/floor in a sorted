@@ -1,0 +1,24 @@
+class Solution{
+    
+    // Function to find floor of x
+    // arr: input array
+    // n is the size of array
+    static int findFloor(long arr[], int n, long x)
+    {
+        return bs(arr,x,0,n-1);
+    }
+    private static int bs(long[] arr,long t,int low,int high){
+       int index=-1;
+       while(low <= high){
+           int mid=(low+high)/2;
+           if(arr[mid]==t)return mid;
+           if(arr[mid] < t){
+               index=mid;
+               low=mid+1;
+               
+           }
+           else high=mid-1;
+       }
+       return index;
+    }
+}
