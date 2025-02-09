@@ -69,11 +69,11 @@ Graph algorithms handle problems related to graph traversal, shortest paths, and
 
 ### LeetCode Problems
 This section contains solutions to various LeetCode problems, categorized by topic and difficulty.
-https://leetcode.com/u/pra_leetcode/
+-[leetCode](https://leetcode.com/u/pra_leetcode/)
 
 ### GeeksforGeeks Problems
 Here, you'll find solutions to numerous GeeksforGeeks problems, organized by data structure and algorithm type.
-https://www.geeksforgeeks.org/user/22315asy1i/
+-[GFG](https://www.geeksforgeeks.org/user/22315asy1i/)
 
 
 
